@@ -1,0 +1,30 @@
+<div class="row">
+    <h2>Intercooler Core Attributes</h2>        
+  </div>
+  <div class="row">
+    <div class="col-6 col-md-6">
+      <div class="row justify-content-center mb-3">
+        <div class="col">
+          <button ic-get-from="<%= get_core_attributes_path %>" ic-target="#response" class="btn btn-primary">GET</button>
+        </div>
+        <div class="col">
+          <button ic-post-to="<%= post_core_attributes_path %>" ic-target="#response" class="btn btn-secondary">POST</button>
+        </div>
+        <div class="col">
+          <button ic-put-to="<%= put_core_attributes_path %>" ic-target="#response" class="btn btn-success">PUT</button>
+        </div>
+        <div class="col">
+          <button ic-patch-to="<%= patch_core_attributes_path %>" ic-target="#response" class="btn btn-info">PATCH</button>
+        </div>
+        <div class="col">
+          <button ic-delete-from="<%= delete_core_attributes_path %>" ic-target="#response" class="btn btn-danger">DELETE</button>
+        </div>
+      </div>
+
+      <div id="response" class="p-3 alert alert-primary">
+      </div>
+    </div>
+    <div class="col-6 col-md-6">
+      <%= cell(:code_tabs, html_content: files[:html_content], css_content: files[:css_content], js_content: files[:js_content], ruby_content: files[:ruby_content]) %>
+    </div>
+  </div>

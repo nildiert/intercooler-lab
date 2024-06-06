@@ -1,0 +1,20 @@
+<div class="row justify-content-center mb-3">
+  <div class="col">
+    <button ic-get-from="<%= get_core_attributes_path %>" ic-target="#response" class="btn btn-primary">GET Demo</button>
+  </div>
+  <div class="col">
+    <button ic-post-to="<%= post_core_attributes_path %>" ic-target="#response" class="btn btn-secondary">POST Demo</button>
+  </div>
+  <div class="col">
+    <button ic-put-to="<%= put_core_attributes_path %>" ic-target="#response" class="btn btn-success">PUT Demo</button>
+  </div>
+  <div class="col">
+    <button ic-patch-to="<%= patch_core_attributes_path %>" ic-target="#response" class="btn btn-info">PATCH Demo</button>
+  </div>
+  <div class="col">
+    <button ic-delete-from="<%= delete_core_attributes_path %>" ic-target="#response" class="btn btn-danger">DELETE Demo</button>
+  </div>
+</div>
+
+<div id="response" class="p-3 alert alert-primary">
+</div>
